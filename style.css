@@ -1,3 +1,4 @@
+/* -------- Curriculum -------- */
 body.cv {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -89,6 +90,7 @@ body.cv {
   padding-left: 20px;
 }
 
+
 /* -------- Site Geral -------- */
 body {
   margin: 0;
@@ -116,6 +118,7 @@ body {
   font-size: 0.9rem;
   color: #555;
 }
+
 
 /* Navegação Inicial */
 .main-nav {
@@ -158,6 +161,7 @@ body {
   padding: 0;
 }
 
+
 /* -------- Portfólio estilo card com zoom -------- */
 .portfolio-grid {
   display: grid;
@@ -183,6 +187,7 @@ body {
 .portfolio-item iframe {
   width: 100%;
   display: block;
+  border: none;
 }
 
 .contact li {
