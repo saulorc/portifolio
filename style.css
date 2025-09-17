@@ -167,7 +167,9 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
-  margin: 40px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
 }
 
 .portfolio-item {
@@ -179,7 +181,7 @@ body {
 }
 
 .portfolio-item:hover {
-  transform: translateY(-6px) scale(1.03);
+  transform: translateY(-6px) scale(1.1);
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
