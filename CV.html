@@ -1,304 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Currículo Saulo Ramos Cunha</title>
-<style>
-  /* Reset and base */
-  * {
-    margin: 0; padding: 0; box-sizing: border-box;
-  }
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background: #f4f7f8;
-    color: #333;
-    padding: 20px;
-  }
-  a {
-    color: #007acc;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  h1, h2, h3 {
-    color: #222;
-    margin-bottom: 0.6rem;
-  }
-  h1 {
-    font-size: 2.4rem;
-    letter-spacing: 2px;
-  }
-  h2 {
-    font-size: 1.8rem;
-    border-bottom: 3px solid #007acc;
-    padding-bottom: 6px;
-    margin-top: 2rem;
-  }
-  h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
-    color: #007acc;
-  }
-  p {
-    margin-bottom: 1rem;
-    text-align: justify;
-  }
-
-  .container {
-    max-width: 900px;
-    background: #fff;
-    margin: auto;
-    padding: 30px 40px;
-    border-radius: 10px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-  }
-  .header {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  .header p {
-    font-size: 1rem;
-    margin: 0.2rem 0;
-  }
-  .header .name {
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 0.2rem;
-  }
-  .header .job-title {
-    font-style: italic;
-    font-weight: 500;
-    color: #555;
-    margin-bottom: 0.5rem;
-  }
-
-  /* Sections */
-  section {
-    margin-bottom: 2rem;
-  }
-
-  /* Lists */
-  ul.skills-list, ul.clients, ul.tech-table {
-    list-style: none;
-    padding-left: 0;
-  }
-  ul.skills-list li, ul.clients li {
-    margin: 0.4rem 0;
-    padding-left: 15px;
-    position: relative;
-  }
-  ul.skills-list li::before, ul.clients li::before {
-    content: '•';
-    color: #007acc;
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-  }
-  .tech-table {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px 25px;
-    max-width: 350px;
-  }
-  .tech-table span {
-    padding: 6px 0;
-  }
-  .level-bar {
-    background: #ddd;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 12px;
-    margin-top: 4px;
-  }
-  .level-bar > div {
-    height: 100%;
-    background: #007acc;
-    border-radius: 20px 0 0 20px;
-  }
-
-  /* Contact & social */
-  .contact-info {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  .contact-info p {
-    font-size: 0.95rem;
-    margin: 0.15rem 0;
-  }
-
-  /* Responsive */
-  @media screen and (max-width: 600px) {
-    .container {
-      padding: 20px;
-    }
-    .tech-table {
-      max-width: 100%;
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo - Saulo Ramos Cunha</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="container" role="main">
-    <header class="header">
-      <h1 class="name">Saulo Ramos Cunha</h1>
-      <p class="job-title">Engenheiro de Planejamento & Especialista em Análise de Dados</p>
-      <div class="contact-info" aria-label="Informações para contato">
-        <p>Rio de Janeiro, RJ - Brasil</p>
-        <p>Email: <a href="mailto:sauloramoscunha@gmail.com">sauloramoscunha@gmail.com</a> | Tel: (21) 98950-9769</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/saulocunha" target="_blank" rel="noopener">linkedin.com/in/saulocunha</a></p>
+<body class="cv">
+  <div class="cv-container">
+
+    <!-- Coluna Esquerda -->
+    <aside class="cv-sidebar">
+      <div class="cv-photo">
+        <img src="assets/imagens/foto-perfil.jpg" alt="Saulo Ramos Cunha">
       </div>
-    </header>
+      <h1>Saulo Ramos Cunha</h1>
+      <h2>Engenheiro de Planejamento &amp; Especialista em Análise de Dados</h2>
 
-    <section aria-labelledby="objetivo">
-      <h2 id="objetivo">Objetivo</h2>
-      <p>Atuar como Consultor e Engenheiro de Planejamento com foco em gestão, planejamento 
-      e controle de projetos em escritórios de projetos (PMO), utilizando experiência em análise e modelagem de dados para suportar a tomada de decisão estratégica por meio de dashboards e indicadores de desempenho (KPIs). Busco contribuir para a melhoria contínua dos processos e resultados dos projetos, apoiado em expertise avançada em ferramentas de BI e tecnologia aplicada à gestão.</p>
-    </section>
+      <section>
+        <h3>Contato</h3>
+        <p>📍 Rio de Janeiro, RJ - Brasil</p>
+        <p>📧 <a href="mailto:sauloramoscunha@gmail.com">sauloramoscunha@gmail.com</a></p>
+        <p>📱 (21) 98950-9769</p>
+        <p>🔗 <a href="https://linkedin.com/in/saulocunha" target="_blank">linkedin.com/in/saulocunha</a></p>
+      </section>
 
-    <section aria-labelledby="resumo">
-      <h2 id="resumo">Resumo Profissional</h2>
-      <p>Profissional com 18 anos de experiência consolidada em consultoria para gestão de projetos, planejamento estratégico e controle, além de análise e modelagem de dados. Ao longo da carreira, atuei com diversos clientes de grande porte em múltiplos setores, incluindo óleo e gás, mineração, siderurgia, tecnologia e energia. Minha expertise abrange a implementação de metodologias inovadoras de planejamento, otimização de processos, integração de sistemas e capacitação técnica em softwares como Oracle Primavera P6, MS Project, SAP e Power BI. Especialista em transformação digital e inteligência de negócios, com forte habilidade em desenvolver dashboards para analisar performance e apoiar decisões gerenciais.</p>
-    </section>
+      <section>
+        <h3>Habilidades Técnicas</h3>
+        <ul>
+          <li>Business Intelligence</li>
+          <li>Excel, Power BI</li>
+          <li>Oracle Primavera P6</li>
+          <li>Microsoft Project</li>
+          <li>Primavera Risk Analysis</li>
+          <li>SAP</li>
+          <li>Python</li>
+          <li>Oracle Primavera Unifier</li>
+          <li>Oracle WAM</li>
+          <li>ManuSis</li>
+          <li>HTML/CSS, JavaScript</li>
+          <li>Adobe Premiere Pro, Photoshop</li>
+        </ul>
+      </section>
 
-    <section aria-labelledby="competencias">
-      <h2 id="competencias">Competências Técnicas</h2>
-      <div class="tech-table" role="list" aria-label="Competências técnicas e níveis de proficiência">
-        <span>Business Intelligence</span>
-        <div class="level-bar" role="presentation"><div style="width: 100%;"></div></div>
+      <section>
+        <h3>Idiomas</h3>
+        <ul>
+          <li>Inglês – Fluente</li>
+          <li>Espanhol – Intermediário</li>
+          <li>Francês – Básico</li>
+        </ul>
+      </section>
+    </aside>
 
-        <span>Excel</span>
-        <div class="level-bar" role="presentation"><div style="width: 100%;"></div></div>
+    <!-- Coluna Direita -->
+    <main class="cv-content">
+      <section>
+        <h2>Objetivo</h2>
+        <p>Atuar como Consultor e Engenheiro de Planejamento com foco em gestão, planejamento e controle de projetos em escritórios de projetos (PMO), utilizando experiência em análise e modelagem de dados para suportar a tomada de decisão estratégica.</p>
+      </section>
 
-        <span>Power BI</span>
-        <div class="level-bar" role="presentation"><div style="width: 100%;"></div></div>
+      <section>
+        <h2>Resumo Profissional</h2>
+        <p>Profissional com 18 anos de experiência em consultoria para gestão de projetos, planejamento estratégico e controle, além de análise e modelagem de dados. Experiência em grandes clientes de múltiplos setores: óleo e gás, mineração, siderurgia, tecnologia e energia.</p>
+        <p>Especialista em BI, transformação digital e metodologias inovadoras de planejamento. Domínio em Oracle Primavera P6, MS Project, SAP e Power BI.</p>
+      </section>
 
-        <span>Oracle Primavera P6</span>
-        <div class="level-bar" role="presentation"><div style="width: 100%;"></div></div>
+      <section>
+        <h2>Experiência Profissional</h2>
+        <div class="job">
+          <h3>Spassu Consultoria em Projetos <span>2024 – Atual</span></h3>
+          <p><strong>Cargo:</strong> Consultor de Planejamento e Gestão</p>
+          <ul>
+            <li>Consultoria em otimização de processos, análise de dados e suporte à gestão.</li>
+            <li>Dashboards interativos com KPIs para tomada de decisão ágil.</li>
+          </ul>
+        </div>
 
-        <span>Microsoft Project</span>
-        <div class="level-bar" role="presentation"><div style="width: 90%;"></div></div>
+        <div class="job">
+          <h3>DGC Consultoria <span>2023 – 2024</span></h3>
+          <p><strong>Cargo:</strong> Consultor Sênior</p>
+          <ul>
+            <li>Aprimoramento de processos de planejamento e reporte.</li>
+            <li>Implantação de soluções em BI e automação de relatórios.</li>
+          </ul>
+        </div>
 
-        <span>Primavera Risk Analysis</span>
-        <div class="level-bar" role="presentation"><div style="width: 80%;"></div></div>
+        <div class="job">
+          <h3>Viniplan Tecnologias (Sócio) <span>2012 – 2023</span></h3>
+          <ul>
+            <li>Desenvolvimento e implantação de tecnologias para gestão integrada de projetos.</li>
+            <li>Treinamento e capacitação técnica em softwares de gestão.</li>
+          </ul>
+        </div>
 
-        <span>SAP</span>
-        <div class="level-bar" role="presentation"><div style="width: 70%;"></div></div>
+        <div class="job">
+          <h3>Viniplan Planejamento <span>2007 – 2023</span></h3>
+          <ul>
+            <li>Planejamento e controle de projetos complexos.</li>
+            <li>Implantação de PMOs e metodologias de gestão.</li>
+          </ul>
+        </div>
+      </section>
 
-        <span>Python</span>
-        <div class="level-bar" role="presentation"><div style="width: 70%;"></div></div>
+      <section>
+        <h2>Principais Clientes Atendidos</h2>
+        <p>Petrobras, Vale, Mitsubishi, Ministério do Esporte, Oracle, Camargo Corrêa, Gerdau, Toshiba, Brenco/Odebrecht, Alstom, Airbus, Subsea 7, CSV, Guarani, Votorantim, Sinochem, Technip.</p>
+      </section>
 
-        <span>Oracle Primavera Unifier</span>
-        <div class="level-bar" role="presentation"><div style="width: 50%;"></div></div>
+      <section>
+        <h2>Formação Acadêmica</h2>
+        <ul>
+          <li>Ciência de Dados (em curso) – UNIVESP</li>
+          <li>Engenharia Ambiental – UFV, 2006</li>
+          <li>Primavera P6 Professional – STEI, 2007</li>
+          <li>Especialista em Primavera P6 EPPM – Oracle, 2013</li>
+          <li>Administração Oracle WAM – Chicago, 2013</li>
+        </ul>
+      </section>
 
-        <span>Oracle WAM - Gestão de Ativos</span>
-        <div class="level-bar" role="presentation"><div style="width: 50%;"></div></div>
+      <section>
+        <h2>Atividades Voluntárias</h2>
+        <ul>
+          <li>Distribuição de cestas básicas – Instituto Mãos Unidas</li>
+          <li>Filmagem e edição de vídeos – CEJA-Barra</li>
+          <li>Fotografia de eventos – CEJA-Barra</li>
+        </ul>
+      </section>
 
-        <span>ManuSis - Gestão de Manutenção</span>
-        <div class="level-bar" role="presentation"><div style="width: 50%;"></div></div>
-
-        <span>HTML/CSS</span>
-        <div class="level-bar" role="presentation"><div style="width: 80%;"></div></div>
-
-        <span>Javascript</span>
-        <div class="level-bar" role="presentation"><div style="width: 50%;"></div></div>
-
-        <span>Adobe Premiere Pro</span>
-        <div class="level-bar" role="presentation"><div style="width: 40%;"></div></div>
-
-        <span>Adobe Photoshop</span>
-        <div class="level-bar" role="presentation"><div style="width: 40%;"></div></div>
-      </div>
-    </section>
-
-    <section aria-labelledby="idiomas">
-      <h2 id="idiomas">Idiomas</h2>
-      <ul class="skills-list">
-        <li>Inglês: Fluente</li>
-        <li>Espanhol: Intermediário</li>
-        <li>Francês: Básico</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="experiencia">
-      <h2 id="experiencia">Experiência Profissional</h2>
-
-      <article>
-        <h3>Spassu Consultoria em Projetos - Consultor de Planejamento e Gestão <small>(2024 - Atual)</small></h3>
-        <p>Atuação em consultoria para otimização de processos, análise avançada de dados e suporte à gestão de projetos. Desenvolvimento e implementação de dashboards interativos com KPIs para monitoramento e tomada de decisão ágil. Atuação junto a líderes das áreas de projetos para melhoria contínua.</p>
-      </article>
-
-      <article>
-        <h3>DGC Consultoria - Consultor Sênior <small>(2023 - 2024)</small></h3>
-        <p>Responsável por aprimorar processos de planejamento, controle e reporte em grandes carteiras de projetos. Implantação de soluções em Business Intelligence e automação de relatórios para avaliação de riscos e performance.</p>
-      </article>
-
-      <article>
-        <h3>Viniplan Tecnologias para Gerenciar Projetos Ltda - Sócio Fundador e Consultor Técnico <small>(2012 - 2023)</small></h3>
-        <p>Desenvolvimento e implementação de tecnologias para gestão integrada de projetos, promovendo adequações e otimizações em sistemas Oracle Primavera. Treinamento e capacitação técnica para equipes em software de gestão e metodologias ágeis.</p>
-      </article>
-
-      <article>
-        <h3>Viniplan Eficácia em Planejamento de Projetos Ltda - Consultor em Planejamento e Controle de Projetos <small>(2007 - 2023)</small></h3>
-        <p>Concepção, estruturação e execução de planejamento e controle de projetos complexos para clientes de grande porte. Implantação de metodologias próprias e de mercado para Escritórios de Projetos (PMO), com foco em resultados, prazo e mitigação de riscos. Atuação direta com grandes empresas como clientes, prestando assessoria técnica e desenvolvimento de soluções customizadas.</p>
-      </article>
-    </section>
-
-    <section aria-labelledby="clientes">
-      <h2 id="clientes">Principais Clientes Atendidos</h2>
-      <ul class="clients">
-        <li>Petrobras (Óleo e Gás)</li>
-        <li>Vale (Mineração)</li>
-        <li>Mitsubishi Corporation (Mineração)</li>
-        <li>Ministério do Esporte (Governo)</li>
-        <li>Oracle (Tecnologia)</li>
-        <li>Camargo Corrêa (Engenharia e Construção)</li>
-        <li>Gerdau (Siderurgia)</li>
-        <li>Toshiba (Energia)</li>
-        <li>Brenco / Odebrecht Agroindustrial (Energia)</li>
-        <li>Alstom (Transporte e Energia)</li>
-        <li>EADS / Airbus Group (Aeroespacial)</li>
-        <li>Subsea 7 (Óleo e Gás)</li>
-        <li><strong>Consórcio Companhia Siderúrgica Vitória – CSV</strong> (Siderurgia)</li>
-        <li>Guarani S.A. (Sucroalcooleiro)</li>
-        <li>Paz Del Río - Grupo Votorantim (Siderurgia, Colômbia)</li>
-        <li>Sinochem (Química e Gás)</li>
-        <li>Technip (Serviços Técnicos)</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="formacao">
-      <h2 id="formacao">Formação Acadêmica</h2>
-      <ul class="skills-list">
-        <li>Graduação em Ciências de Dados (cursando) - UNIVESP - Universidade Virtual do Estado de São Paulo</li>
-        <li>Bacharelado em Engenharia Ambiental - UFV - Universidade Federal de Viçosa, 2006</li>
-        <li>Curso Primavera P6 Professional - STEI, 2007</li>
-        <li>Certificado de Especialista em Implementação do Primavera P6 EPPM - Oracle, 2013</li>
-        <li>Curso Administração do Oracle WAM - Oracle, Chicago (USA), 2013</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="voluntariado">
-      <h2 id="voluntariado">Atividades Voluntárias</h2>
-      <ul class="skills-list">
-        <li>Distribuição de cestas básicas pelo Instituto Mãos Unidas</li>
-        <li>Filmagem, edição e transmissão de vídeos para o CEJA-Barra - Centro Espírita Joanna de Ângelis</li>
-        <li>Fotografia de eventos para o CEJA-Barra - Centro Espírita Joanna de Ângelis</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="internacional">
-      <h2 id="internacional">Experiência Internacional</h2>
-      <ul class="skills-list">
-        <li>Colômbia: Projeto na Siderúrgica Paz Del Río</li>
-        <li>Chicago (EUA): Curso Oracle WAM - Administração de Software</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Experiência Internacional</h2>
+        <ul>
+          <li>Colômbia – Projeto Siderúrgica Paz Del Río</li>
+          <li>Chicago (EUA) – Curso Oracle WAM</li>
+        </ul>
+      </section>
+    </main>
   </div>
 </body>
 </html>
