@@ -11,7 +11,7 @@ body.cv {
   min-height: 100vh;
 }
 
-/* Coluna Esquerda (fixa) */
+/* Coluna Esquerda (fixa em desktop) */
 .cv-sidebar {
   width: 30%;
   background: #1B3B2F;   /* verde profundo */
@@ -109,7 +109,10 @@ body.cv {
   justify-content: space-between;
   margin: 0;
   font-size: 1.1rem;
-  color: #2E5D47; /* verde médio */
+  font-weight: bold;
+  background: linear-gradient(to right, #2E5D47, #1B3B2F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cv-content .job p {
@@ -165,4 +168,42 @@ body.cv {
 .cv-sidebar {
   scrollbar-width: thin;
   scrollbar-color: #1B3B2F #ecf0f1;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+  }
+
+  .cv-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .cv-photo img {
+    max-width: 180px;
+    margin: 0 auto 20px;
+  }
+
+  .cv-content {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  /* Scrollbars somem no mobile */
+  .cv-content::-webkit-scrollbar,
+  .cv-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cv-content,
+  .cv-sidebar {
+    scrollbar-width: none; /* Firefox */
+  }
 }
