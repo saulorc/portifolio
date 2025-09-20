@@ -10,10 +10,10 @@ body.cv {
   min-height: 100vh;
 }
 
-/* Coluna Esquerda */
+/* Left Column */
 .cv-sidebar {
   width: 30%;
-  background: #1b3a2a; /* verde escuro profundo */
+  background: #1b3a2a; /* dark green */
   color: #fff;
   padding: 20px;
 }
@@ -48,14 +48,23 @@ body.cv {
   margin: 5px 0;
 }
 
-/* Foto */
+.cv-sidebar a {
+  color: #c5d8c1;
+  text-decoration: none;
+}
+
+.cv-sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Photo */
 .cv-photo img {
   width: 100%;
   border-radius: 50%;
   margin-bottom: 20px;
 }
 
-/* Coluna Direita */
+/* Right Column */
 .cv-content {
   width: 70%;
   padding: 40px;
@@ -91,7 +100,7 @@ body.cv {
   padding-left: 20px;
 }
 
-/* Responsividade */
+/* Responsiveness */
 @media screen and (max-width: 768px) {
   .cv-container {
     flex-direction: column;
