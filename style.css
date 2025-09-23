@@ -174,3 +174,66 @@ h1, h2, h3 {
   text-align: right;
   margin-bottom: 20px;
 }
+
+/* Cabeçalho (para index, portfólio e contato) */
+.header {
+  width: 100%;
+  background: #1a2d24; /* verde escuro profundo */
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.header h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+  color: #cfd8d6;
+}
+
+.header-nav {
+  margin-top: 10px;
+}
+
+.header-nav a {
+  color: #fff;
+  margin-left: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo abaixo do cabeçalho */
+.page-content {
+  padding: 30px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-nav {
+    margin-top: 10px;
+  }
+  .header-nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
