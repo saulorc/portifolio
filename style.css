@@ -1,8 +1,24 @@
-body.cv {
+/* Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f5f7fa;
+  line-height: 1.6;
+  background: #f4f1e9; /* tom sépia claro */
   color: #333;
+}
+
+/* Links */
+a {
+  color: #1a5e46; /* verde derivado */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 /* Container geral */
@@ -11,57 +27,47 @@ body.cv {
   min-height: 100vh;
 }
 
-/* Coluna Esquerda (fixa em desktop) */
-.cv-sidebar {
+/* Coluna Esquerda (sidebar do currículo e menus dos outros arquivos) */
+.cv-sidebar,
+.sidebar {
   width: 30%;
-  background: #1B3B2F;   /* verde profundo */
+  background: #1a2d24; /* verde escuro profundo */
   color: #fff;
   padding: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  overflow-y: auto;
 }
 
-.cv-sidebar h1 {
+.cv-sidebar h1,
+.sidebar h1 {
   font-size: 1.8rem;
   margin: 10px 0 0;
 }
 
-.cv-sidebar h2 {
+.cv-sidebar h2,
+.sidebar h2 {
   font-size: 1rem;
   font-weight: normal;
   margin: 5px 0 20px;
-  color: #A8CABA; /* verde claro */
+  color: #cfd8d6; /* cinza esverdeado */
 }
 
-.cv-sidebar h3 {
+.cv-sidebar h3,
+.sidebar h3 {
   margin-top: 20px;
   font-size: 1rem;
   text-transform: uppercase;
+  border-bottom: 1px solid #4c5a56;
   padding-bottom: 5px;
-  background: linear-gradient(to right, #2E5D47, #1B3B2F);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
 }
 
-.cv-sidebar h3::after {
-  content: "";
-  display: block;
-  height: 2px;
-  margin-top: 5px;
-  background: linear-gradient(to right, #2E5D47, #1B3B2F);
-}
-
-.cv-sidebar ul {
+.cv-sidebar ul,
+.sidebar ul {
   list-style: none;
   padding: 0;
   margin: 10px 0;
 }
 
-.cv-sidebar li {
+.cv-sidebar li,
+.sidebar li {
   margin: 5px 0;
 }
 
@@ -72,32 +78,18 @@ body.cv {
   margin-bottom: 20px;
 }
 
-/* Coluna Direita */
-.cv-content {
+/* Conteúdo direito */
+.cv-content,
+.main-content {
   width: 70%;
-  margin-left: 30%;
   padding: 40px;
   background: #fff;
-  overflow-y: auto;
-  min-height: 100vh;
 }
 
-.cv-content h2 {
+.cv-content h2,
+.main-content h2 {
+  color: #1a5e46;
   margin-top: 0;
-  display: inline-block;
-  padding-bottom: 5px;
-  background: linear-gradient(to right, #2E5D47, #1B3B2F);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-}
-
-.cv-content h2::after {
-  content: "";
-  display: block;
-  height: 3px;
-  margin-top: 5px;
-  background: linear-gradient(to right, #2E5D47, #1B3B2F);
 }
 
 .cv-content .job {
@@ -109,10 +101,7 @@ body.cv {
   justify-content: space-between;
   margin: 0;
   font-size: 1.1rem;
-  font-weight: bold;
-  background: linear-gradient(to right, #2E5D47, #1B3B2F);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #234d39;
 }
 
 .cv-content .job p {
@@ -120,130 +109,28 @@ body.cv {
   font-weight: bold;
 }
 
-/* Listas da coluna direita */
-.cv-content ul {
+.cv-content ul,
+.main-content ul {
   margin: 0;
   padding-left: 20px;
 }
 
-.cv-content ul li {
-  margin-bottom: 6px;
-  position: relative;
-  list-style: none;
-  padding-left: 15px;
-}
-
-.cv-content ul li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #1B3B2F; /* verde profundo */
-  font-weight: bold;
-}
-
-/* Scrollbar customizada (Webkit) */
-.cv-content::-webkit-scrollbar,
-.cv-sidebar::-webkit-scrollbar {
-  width: 8px;
-}
-
-.cv-content::-webkit-scrollbar-track,
-.cv-sidebar::-webkit-scrollbar-track {
-  background: #ecf0f1;
-}
-
-.cv-content::-webkit-scrollbar-thumb,
-.cv-sidebar::-webkit-scrollbar-thumb {
-  background: #1B3B2F;  /* verde profundo */
-  border-radius: 4px;
-}
-
-.cv-content::-webkit-scrollbar-thumb:hover,
-.cv-sidebar::-webkit-scrollbar-thumb:hover {
-  background: #2E5D47;  /* verde médio */
-}
-
-/* Scrollbar Firefox */
-.cv-content,
-.cv-sidebar {
-  scrollbar-width: thin;
-  scrollbar-color: #1B3B2F #ecf0f1;
+/* Cabeçalhos globais */
+h1, h2, h3 {
+  color: #234d39;
 }
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
-  .cv-container {
+  .cv-container,
+  .layout {
     flex-direction: column;
   }
 
-  .cv-sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .cv-photo img {
-    max-width: 180px;
-    margin: 0 auto 20px;
-  }
-
-  .cv-content {
-    width: 100%;
-    margin-left: 0;
-    padding: 20px;
-    min-height: auto;
-  }
-
-  /* Scrollbars somem no mobile */
-  .cv-content::-webkit-scrollbar,
-  .cv-sidebar::-webkit-scrollbar {
-    display: none;
-  }
-
+  .cv-sidebar,
+  .sidebar,
   .cv-content,
-  .cv-sidebar {
-    scrollbar-width: none; /* Firefox */
-  }
-}
-
-/* Botões */
-.btn {
-  display: inline-block;
-  background: #1a5e46;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 8px 5px;
-  border-radius: 6px;
-  text-align: center;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #234d39;
-}
-
-/* Navegação Index */
-.nav-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-/* Responsividade botões no celular */
-@media screen and (max-width: 768px) {
-  .nav-buttons {
-    flex-direction: column;
-  }
-  .btn {
+  .main-content {
     width: 100%;
   }
-}
-
-/* Botão superior no currículo */
-.top-nav {
-  text-align: right;
-  margin-bottom: 20px;
 }
