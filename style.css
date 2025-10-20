@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+  font-size: 12px;
   line-height: 1.6;
   background: #f4f1e9; /* tom sépia claro */
   color: #333;
@@ -25,98 +26,126 @@ a:hover {
 .cv-container {
   display: flex;
   min-height: 100vh;
+  gap: 40px; /* mais espaço em branco entre colunas */
+  padding: 20px;
 }
 
-/* Coluna Esquerda (sidebar do currículo e menus dos outros arquivos) */
+/* Coluna Esquerda */
 .cv-sidebar,
 .sidebar {
   width: 30%;
   background: #1a2d24; /* verde escuro profundo */
   color: #fff;
-  padding: 20px;
+  padding: 30px 25px;
+  border-radius: 8px;
 }
 
 .cv-sidebar h1,
 .sidebar h1 {
-  font-size: 1.8rem;
-  margin: 10px 0 0;
+  font-size: 2rem;
+  margin-top: 10px;
+  color: #e0e0e0; /* cinza claro para melhor contraste */
+  font-weight: 700;
 }
 
 .cv-sidebar h2,
 .sidebar h2 {
-  font-size: 1rem;
-  font-weight: normal;
-  margin: 5px 0 20px;
-  color: #cfd8d6; /* cinza esverdeado */
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 8px 0 20px;
+  color: #e0e0e0;
 }
 
 .cv-sidebar h3,
 .sidebar h3 {
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 1rem;
   text-transform: uppercase;
   border-bottom: 1px solid #4c5a56;
-  padding-bottom: 5px;
-}
-
-.cv-sidebar ul,
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0;
-}
-
-.cv-sidebar li,
-.sidebar li {
-  margin: 5px 0;
+  padding-bottom: 8px;
+  color: #e0e0e0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Foto */
 .cv-photo img {
   width: 100%;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  border: 3px solid #1a5e46;
+}
+
+/* List skills with bars */
+.skills-list li {
+  margin: 8px 0;
+  position: relative;
+  padding-left: 10px;
+}
+
+.skills-list .bar {
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  height: 5px;
+  background-color: #1a5e46;
+  border-radius: 3px;
 }
 
 /* Conteúdo direito */
 .cv-content,
 .main-content {
   width: 70%;
-  padding: 40px;
+  padding: 40px 30px;
   background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 0.08);
+  font-size: 11.5px;
 }
 
 .cv-content h2,
 .main-content h2 {
   color: #1a5e46;
   margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-bottom: 2px solid #1a5e46;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
 }
 
 .cv-content .job {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .cv-content .job h3 {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #234d39;
+  font-weight: 600;
 }
 
 .cv-content .job p {
   margin: 5px 0 10px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .cv-content ul,
 .main-content ul {
-  margin: 0;
-  padding-left: 20px;
+  margin: 0 0 20px 20px;
+  padding-left: 10px;
+  list-style-type: disc;
 }
 
 /* Cabeçalhos globais */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
   color: #234d39;
 }
 
@@ -125,6 +154,7 @@ h1, h2, h3 {
   .cv-container,
   .layout {
     flex-direction: column;
+    padding: 10px;
   }
 
   .cv-sidebar,
@@ -132,6 +162,7 @@ h1, h2, h3 {
   .cv-content,
   .main-content {
     width: 100%;
+    padding: 20px;
   }
 }
 
@@ -144,8 +175,9 @@ h1, h2, h3 {
   margin: 8px 5px;
   border-radius: 6px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   transition: background 0.3s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -172,68 +204,5 @@ h1, h2, h3 {
 /* Botão superior no currículo */
 .top-nav {
   text-align: right;
-  margin-bottom: 20px;
-}
-
-/* Cabeçalho (para index, portfólio e contato) */
-.header {
-  width: 100%;
-  background: #1a2d24; /* verde escuro profundo */
-  color: #fff;
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.header h1 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.header h2 {
-  font-size: 1rem;
-  font-weight: normal;
-  margin: 0;
-  color: #cfd8d6;
-}
-
-.header-nav {
-  margin-top: 10px;
-}
-
-.header-nav a {
-  color: #fff;
-  margin-left: 15px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.header-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Conteúdo abaixo do cabeçalho */
-.page-content {
-  padding: 30px;
-  background: #fff;
-  margin: 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* Responsividade */
-@media screen and (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .header-nav {
-    margin-top: 10px;
-  }
-  .header-nav a {
-    display: block;
-    margin: 5px 0;
-  }
+  margin-bottom: 30px;
 }
