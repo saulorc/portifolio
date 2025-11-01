@@ -80,18 +80,18 @@ a:hover {
 
 /* List skills with bars */
 .skills-list li {
-  margin: 8px 0;
+  margin: 12px 0 16px 0;
   position: relative;
-  padding-left: 10px;
+  padding-left: 0;
 }
 
+/* Corrigido para remover position absolute - posição natural abaixo do texto */
 .skills-list .bar {
-  position: absolute;
-  left: 0;
-  bottom: 6px;
-  height: 5px;
+  height: 8px;
   background-color: #1a5e46;
-  border-radius: 3px;
+  border-radius: 4px;
+  margin-top: 6px;
+  width: 80%; /* padrão, pode ser sobrescrita inline */
 }
 
 /* Conteúdo direito */
