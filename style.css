@@ -157,6 +157,10 @@ a:hover {
   font-weight: 700;
 }
 
+.cv-content .job ul {
+  list-style-type: none;
+}
+
 .cv-content ul,
 .main-content ul {
   margin: 0 0 20px 20px;
