@@ -83,6 +83,10 @@ a:hover {
   width: 5%
 }
 
+.cv-icon img, p {
+    display: inline-block;
+}
+
 /* List skills with bars */
 .skills-list ul {
   list-style-type: none
