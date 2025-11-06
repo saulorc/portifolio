@@ -147,9 +147,9 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  font-size: 1.0rem;
+  font-size: 0.9rem;
   color: #696969;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .cv-content ul,
