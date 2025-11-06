@@ -83,7 +83,7 @@ a:hover {
   width: 5%;
 }
 
-.cv-icon p {
+.cv-icon p,a {
   display: inline-block;
   padding: 5px;
 }
