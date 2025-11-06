@@ -78,7 +78,16 @@ a:hover {
   border: 3px solid #1a5e46;
 }
 
+/* Icons */
+.cv-icon img {
+  width: 10%
+}
+
 /* List skills with bars */
+.skills-list ul {
+  list-style-type: none
+}
+
 .skills-list li {
   margin: 12px 0 16px 0;
   position: relative;
@@ -132,6 +141,15 @@ a:hover {
 .cv-content .job p {
   margin: 5px 0 10px;
   font-weight: 600;
+}
+
+.cv-content .job .cargo p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 1.0rem;
+  color: #696969;
+  font-weight: 700;
 }
 
 .cv-content ul,
