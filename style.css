@@ -113,6 +113,14 @@ a:hover {
   width: 80%; /* padrão, pode ser sobrescrita inline */
 }
 
+.skills-list .bar p {
+  height: 8px;
+  font-size: 10px;
+  color: #c9c9c9;
+  margin: 0;
+}
+
+
 /* Conteúdo direito */
 .cv-content,
 .main-content {
