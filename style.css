@@ -102,8 +102,10 @@ a:hover {
 /* Corrigido para remover position absolute - posição natural abaixo do texto */
 .skills-list .bar {
   height: 8px;
+  align-items: center;
+  justify-content: center;
   font-size: 10px;
-  color: grey;
+  color: #c9c9c9;
   background-color: #1a5e46;
   border-radius: 4px;
   margin-top: 6px;
