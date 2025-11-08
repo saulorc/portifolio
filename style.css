@@ -118,15 +118,15 @@ a:hover {
   display: flex;
   align-items: center;   /* Centraliza verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
-  height: 12px;
-  font-size: 12px;
+  height: 14px;
+  font-size: 11px;
 }
 
 .skills-list .bar .large p {
   display: flex;
   align-items: center;   /* Centraliza verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
-  height: 12px;
+  height: 14px;
   font-size: 11px;
   color: #c9c9c9;
   margin: 0;
