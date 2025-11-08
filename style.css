@@ -114,7 +114,7 @@ a:hover {
   width: 80%; /* padrão, pode ser sobrescrita inline */
 }
 
-skills-list .bar .large {
+.skills-list .bar .large {
   display: flex;
   align-items: center;   /* Centraliza verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
