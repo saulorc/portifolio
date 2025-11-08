@@ -114,8 +114,11 @@ a:hover {
 }
 
 .skills-list .bar p {
-  height: 8px;
-  font-size: 10px;
+  display: flex;
+  align-items: center;   /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  height: 10px;
+  font-size: 11px;
   color: #c9c9c9;
   margin: 0;
 }
