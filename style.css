@@ -103,8 +103,8 @@ a:hover {
 
 .skills-list .bar {
   display: flex;
-  align-items: center;   /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;   
+  justify-content: center; 
   height: 8px;
   font-size: 10px;
   color: #c9c9c9;
@@ -128,6 +128,9 @@ a:hover {
 }
 
 .skills-list .barlarge p {
+  display: flex;
+  align-items: center;   
+  justify-content: center; 
   height: 12px;
   font-size: 11px;
   color: #c9c9c9;
