@@ -101,6 +101,16 @@ a:hover {
 
 /* Corrigido para remover position absolute - posição natural abaixo do texto */
 
+.bar-bg {
+  width: 100%;
+  background: #c9c9c9;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
 .skills-list .bar {
   display: flex;
   align-items: center;   
@@ -112,6 +122,9 @@ a:hover {
   border-radius: 4px;
   margin-top: 6px;
   width: 80%; /* padrão, pode ser sobrescrita inline */
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .skills-list .barlarge {
