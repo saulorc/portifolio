@@ -114,19 +114,24 @@ a:hover {
   width: 80%; /* padrão, pode ser sobrescrita inline */
 }
 
-.skills-list .bar .large {
+.skills-list .barlarge {
   display: flex;
   align-items: center;   /* Centraliza verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
-  height: 14px;
+  height: 12px;
   font-size: 11px;
+  color: #c9c9c9;
+  background-color: #1a5e46;
+  border-radius: 4px;
+  margin-top: 6px;
+  width: 80%; /* padrão, pode ser sobrescrita inline */
 }
 
-.skills-list .bar .large p {
+.skills-list .barlarge p {
   display: flex;
   align-items: center;   /* Centraliza verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
-  height: 14px;
+  height: 12px;
   font-size: 11px;
   color: #c9c9c9;
   margin: 0;
