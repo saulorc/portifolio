@@ -101,16 +101,6 @@ a:hover {
 
 /* Corrigido para remover position absolute - posição natural abaixo do texto */
 
-.bar-bg {
-  width: 100%;
-  background: #c9c9c9;
-  height: 8px;
-  border-radius: 4px;
-  margin-top: 6px;
-  position: absolute;
-  overflow: hidden;
-}
-
 .skills-list .bar {
   display: flex;
   align-items: center;   
@@ -129,8 +119,8 @@ a:hover {
 
 .skills-list .barlarge {
   display: flex;
-  align-items: center;   /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+  justify-content: center;
   height: 12px;
   font-size: 11px;
   color: #c9c9c9;
@@ -202,6 +192,22 @@ a:hover {
 
 .cv-content .job ul {
   list-style-type: none;
+}
+
+/* Formação */
+.formacao-list ul {
+  list-style-type: none;
+}
+
+.formacao-list li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  position: relative;
+  padding-left: 0;
+  font-size: 1.0rem;
+  color: #234d39;
+  font-weight: 700;
 }
 
 .cv-content ul,
