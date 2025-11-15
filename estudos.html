@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conteúdos de Matemática</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        select, ul { margin-top: 1em; }
+        li { margin-bottom: 0.7em; }
+        .links { margin-left: 1em; display: block; }
+    </style>
+    <script>
+        function mostrarConteudos() {
+            var aluno = document.getElementById("aluno").value;
+            var conteudos = {
+                "João Francisco": [
+                    {
+                        texto: "Potenciação (Livro 1 - pg. 90)",
+                        links: [
+                            { url: "https://link-to-quiz.lovable.app/quiz/5490b888-053e-438d-8890-1f9b062ee84d", label: "Exercícios 1" }
+                        ]
+                    },
+                    {
+                        texto: "Frações",
+                        links: [
+                            { url: "https://link-to-quiz.lovable.app/quiz/ae0a3f82-0312-4331-a232-cfd6652a0624", label: "Exercícios 1" },
+                            { url: "https://www.todamateria.com.br/exercicios-sobre-adicao-e-subtracao-de-fracoes/", label: "Exercícios 2" }
+                        ]
+                    },
+                    {
+                        texto: "Máximo Divisor Comum (MDC)",
+                        links: [
+                            { url: "https://www.todamateria.com.br/mmc-e-mdc-exercicios/", label: "Exercícios 1" },
+                            { url: "https://www.todamateria.com.br/exercicios-sobre-maximo-divisor-comum-mdc/", label: "Exercícios 2" }
+                        ]
+                    },
+                    {
+                        texto: "Mínimo Múltiplo Comum (MMC)",
+                        links: [
+                            { url: "https://www.todamateria.com.br/mmc-e-mdc-exercicios/", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Adição/Subtração de frações e ângulos",
+                        links: [
+                            { url: "https://www.todamateria.com.br/exercicios-sobre-angulos/", label: "Exercícios 1" }
+                        ]
+                    },
+                    {
+                        texto: "Divisão (Livro 1 - pg. 73)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Adição e Subtração de Frações (Livro 2 - Cap. 7 - pg. 12 a 33)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Adição e Subtração de Ângulos (Livro 2 - Cap. 7 - pg. 12 a 33)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Multiplicação e Divisão de Frações (Livro 2 - Cap. 8 - pg. 38 a 64)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Números Decimais e Polígonos (Livro 2 - Cap. 9 - pg. 67 a 114)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    }
+                ],
+                "Antonio Bento": [
+                    {
+                        texto: "Dízima periódica e fração geratriz (Livro 1 - pg. 27)",
+                        links: [
+                            { url: "https://link-to-quiz.lovable.app/quiz/c5f39bbb-360d-40b4-b51a-5cbdcda44259", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Área de figuras planas (Livro 2 - pg. 13)",
+                        links: [
+                            { url: "https://link-to-quiz.lovable.app/quiz/9f9e6ef2-d1cf-41be-874d-bb1a1509847a", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Expressões Algébricas (Livro 1 - pg. 76)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Produtos Notáveis e Produto da Soma pela Diferença (Livro 1 - pgs. 151 e 158)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Fatoração de Polinômios (Livro 1 - pg. 161)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Equação de 2º Grau Reduzida (Livro 2 - pg. 29)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Equação de 2º Grau Completa (Livro 2 - pg. 40 a 65)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Sistema de Equações: Método da Adição e Substituição (Livro 2 - pg. 67 a 113)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    },
+                    {
+                        texto: "Volume do Bloco Retangular e da Esfera (Livro 2 - pg. 116 a 140)",
+                        links: [
+                            { url: "#", label: "Exercícios" }
+                        ]
+                    }
+                ]
+            };
+
+            var listaConteudos = '';
+            if (conteudos[aluno]) {
+                listaConteudos = '<ul>';
+                conteudos[aluno].forEach(function(item) {
+                    listaConteudos += `<li>${item.texto}`;
+                    if (item.links && item.links.length) {
+                        item.links.forEach(function(link) {
+                            listaConteudos += `<span class="links"><a href="${link.url}" target="_blank">${link.label}</a></span>`;
+                        });
+                    }
+                    listaConteudos += `</li>`;
+                });
+                listaConteudos += '</ul>';
+            } else {
+                listaConteudos = '<p>Selecione um aluno para ver os conteúdos.</p>';
+            }
+            document.getElementById("conteudos").innerHTML = listaConteudos;
+        }
+    </script>
+</head>
+<body>
+    <h1>Filtrar Conteúdos de Matemática</h1>
+    <label for="aluno">Escolha o aluno:</label>
+    <select id="aluno" onchange="mostrarConteudos()">
+        <option value="">-- Selecione --</option>
+        <option value="João Francisco">João Francisco</option>
+        <option value="Antonio Bento">Antonio Bento</option>
+    </select>
+    <div id="conteudos">
+        <p>Selecione um aluno para ver os conteúdos.</p>
+    </div>
+</body>
+</html>
