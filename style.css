@@ -99,8 +99,6 @@ a:hover {
   padding-left: 0;
 }
 
-/* Corrigido para remover position absolute - posição natural abaixo do texto */
-
 .skills-list .bar {
   display: flex;
   align-items: center;   
@@ -170,7 +168,7 @@ a:hover {
 .cv-content .job h3 {
   display: flex;
   justify-content: space-between;
-  margin-right: 30%;
+  margin-right: 0;
   font-size: 1.2rem;
   color: #1d5339;
   font-weight: 600;
