@@ -170,13 +170,13 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin-right: 0;
+  margin-bottom: 0;
   font-size: 1.2rem;
   color: #1d5339;
   font-weight: 600;
 }
 
 .cv-content .job p {
-  margin: 5px 0 10px;
   font-weight: 600;
 }
 
