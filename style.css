@@ -191,6 +191,17 @@ a:hover {
   padding: 0 0 5px 0;
 }
 
+.cv-content .job .periodo p span {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 0 5px 0;
+  background-color: #94B180;
+}
+
 .cv-content .job .cargo p {
   display: flex;
   justify-content: space-between;
