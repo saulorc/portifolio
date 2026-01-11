@@ -193,7 +193,7 @@ a:hover {
 .cv-content .job .cargo p {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin-bottom: 10px;
   font-size: 0.9rem;
   color: #696969;
   font-weight: 700;
