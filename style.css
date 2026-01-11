@@ -163,7 +163,7 @@ a:hover {
 
 /* Experiência Profissional */
 .cv-content .job {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .cv-content .job h3 {
@@ -187,7 +187,7 @@ a:hover {
   font-size: 0.9rem;
   color: #009688;
   font-weight: 700;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .cv-content .job .cargo p {
