@@ -157,19 +157,20 @@ a:hover {
   font-size: 1.8rem;
   font-weight: 700;
   border-bottom: 2px solid #1a5e46;
-  padding-bottom: 3px;
+  padding-bottom: 1px;
   margin-bottom: 20px;
 }
 
 /* Experiência Profissional */
 .cv-content .job {
   margin: 0;
+  padding: 0;
 }
 
 .cv-content .job h3 {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  padding-bottom: 1px;
   font-size: 1.2rem;
   color: #1d5339;
   font-weight: 600;
@@ -185,14 +186,14 @@ a:hover {
   font-size: 0.9rem;
   color: ##94B180;
   font-weight: 700;
-  margin-bottom: 5px;
+  padding-bottom: 3px;
 }
 
 .cv-content .job .cargo p {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
   font-size: 0.9rem;
   color: #696969;
   font-weight: 700;
