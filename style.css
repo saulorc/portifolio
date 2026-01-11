@@ -170,9 +170,9 @@ a:hover {
 .cv-content .job h3 {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin-right: 30%;
   font-size: 1.2rem;
-  color: #234d39;
+  color: #1d5339;
   font-weight: 600;
 }
 
