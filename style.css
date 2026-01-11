@@ -170,10 +170,11 @@ a:hover {
 .cv-content .job h3 {
   display: flex;
   justify-content: space-between;
+  margin: 0;
   padding: 0 0 2px 0;
   font-size: 1.2rem;
   color: #1d5339;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .cv-content .job p {
@@ -185,17 +186,19 @@ a:hover {
   justify-content: space-between;
   font-size: 1.2rem;
   color: #94B180;
-  font-weight: 700;
+  font-weight: 600;
+  margin: 0;
   padding: 0 0 5px 0;
 }
 
 .cv-content .job .cargo p {
   display: flex;
   justify-content: space-between;
+  margin: 0;
   padding: 0 0 3px 10px;
   font-size: 0.9rem;
   color: #696969;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .cv-content .job ul {
